@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#myHeader {
+    background-color: lightblue;
+    color: #000000;
+    padding: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+.Bio {
+    display: flex;
+}
+
+.frame {
+    max-height:300px;
+    border: 10px solid black;
+    background: rgb(50, 66, 71);
+    float: left;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.BioText {
+    font-size: 25px;
+    font-style: Serif;
+}
+
+.Hyperlink {
+    background-color: lightblue;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    border: 10px solid rgb(200, 202, 202);
+    margin-left: auto;
+    height: 320px;
+    padding: 20px;
+}
+
+.Hyperlink ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.Hyperlink li {
+    text-align: center;
+}
+
+.Hyperlink a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.Hyperlink li:first-child a {
+    background-color: rgb(200, 202, 202);
+}
+
+.Hyperlink a:hover {
+    background-color: black;
+}
+
+.Footer {
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 10px solid rgb(200, 202, 202);
+}
+
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+#dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    #myHeader {
+        background-color: lightblue;
+        color: #000000;
+        padding: 40px;
+        text-align: center;
+        margin: 0;
+        border-bottom: 10px solid rgb(200, 202, 202);
+    }
+
+    .frame {
+        margin-top: 10px;
+    }
+
+    .Bio {
+        margin-bottom: 50px;
+    }
+    .Hyperlink {
+        display: none;
+    }
+}
+

@@ -1,0 +1,128 @@
+body { 
+    margin: 0;
+    /* Set the font for whole page */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Use same format of header for all pages */
+#myHeader {
+    background-color: lightblue; /* Make a light blue frame */
+    color: #000000;
+    padding: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Contains all the contents in the page */
+.contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 100px;;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.contact-item {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contact-item h2 {
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+/* Start of navigation bar */
+.Hyperlink {
+    background-color: lightblue;
+    width: 200px;
+    border: 10px solid rgb(200, 202, 202);
+    padding: 20px;
+}
+
+.Hyperlink ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Hyperlink li {
+    text-align: center;
+}
+
+.Hyperlink a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.current-page a {
+    background-color: rgb(200, 202, 202);
+}
+
+.Hyperlink a:hover {
+    background-color: black;
+}
+/* End of navigation bar */
+
+/* This is for the footer */
+.Footer {
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 10px solid rgb(200, 202, 202);
+}
+
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+#dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .contents {
+        margin-top: 10px;
+    }
+
+    #myHeader { /* The header format is same for every page */
+        /* It has a light blue border to cover the text of header */
+        background-color: lightblue;
+        color: #000000;
+        padding: 40px;
+        text-align: center;
+        margin: 0;
+        border-bottom: 10px solid rgb(200, 202, 202);
+    }
+    .Hyperlink {
+        display: none;
+    }
+  }

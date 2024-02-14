@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- link to the css file -->
+        <link rel="stylesheet" type="text/css" href="Hobby2.css">
+    </head>
+    
+    <body>
+        <!-- Header that on the top (Same for all the pages) -->
+        <h1 id = "myHeader">Hobby 2 -- Sport</h1>
+        <div class = "all">
+        <!-- The class Content contains all the contents -->
+        <div class = "Content">
+            <!-- The class contains 2 pictures and some texts -->
+            <div class = "Tennis"> <!-- Tennis picture -->
+
+                <h2 id = "MySecondHeader"> Tennis </h2>
+                <p> &#160 &#160 &#160 I possess proficiency in various sports, with tennis being 
+                    my favorite. My parents' fervor for tennis influenced me from a young age, 
+                    leading me to begin playing when I was little. From the age of 10, I dedicated 
+                    at least an hour daily to tennis practice. By the time I turned 14, I commenced 
+                    traveling extensively for training and competitions. This particular photo was 
+                    captured in Illkley, Scotland, in 2017, affording me the opportunity to experience 
+                    playing on a grass court for the first time. To date, it remains my sole encounter 
+                    with such a surface.
+                </p>
+
+                <!-- The second picture in this class -->
+                <div class = "TennisPic2">
+                    <img src="GrassPic.jpg" alt="Tennis Picture" width="200" height="280"/>
+                </div>
+            </div>
+            <!-- This is the navigatioin bar -->
+            <!-- This is the second class in this Content class and it has some texts and a picture -->
+            <div class = "TennisTeam">
+                <h3 id = "TennisTeamHeader"> NMSU Women's Tennis Team</h2>
+                <p>
+                    &#160 &#160 &#160 Right now, I am a member of the NMSU Women's Tennis Team, 
+                    which I find highly enjoyable. Our team dedicates three hours to practice
+                    every day from Monday to Saturday, and during the spring semester, we engage 
+                    in numerous matches. Almost weekly, we embark on travels to compete against 
+                    other schools.
+                </p>
+                <p>
+                    &#160 &#160 &#160 Here's a picture that was took while I'm on the team. This picture 
+                    is consisted of 3 pictures that I took each year on the media day.
+                </p>
+
+                <!-- This is the piture about the tennis team-->
+                <div class = "TeamPic1">
+                    <img src="PersonalPic.jpg" alt="My Tennis Picture" width="222" height="166"/>
+                </div>
+            </div> 
+        </div>
+
+        <div class="Hyperlink">
+            <ul>
+              <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+              <li><a href="http://127.0.0.1:5500/Hobby1.html">Hobby 1</a></li>
+              <li class = "current-page"><a href="http://127.0.0.1:5500/Hobby2.html">Hobby 2</a></li>
+              <li><a href="http://127.0.0.1:5500/Project.html">Project</a></li>
+              <li><a href="http://127.0.0.1:5500/Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        </div><button id="dark-mode-toggle">Toggle Dark Mode</button>
+
+        <script>
+            document.getElementById("dark-mode-toggle").onclick = function(){
+                document.getElementsByTagName("body")[0].classList.toggle("dark");
+            };
+        </script>
+    </div>
+        <!-- This is the footer -->
+        <footer class="Footer">
+            Copyright &copy; 2024 Mingfang Zhu
+        </footer>
+    </body>
+</html>

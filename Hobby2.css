@@ -1,0 +1,172 @@
+body { 
+    margin: 0;
+    /* Set the font for whole page */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.all {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Use same format of header for all pages */
+#myHeader {
+    background-color: lightblue; /* Make a light blue frame */
+    color: #000000;
+    padding: 40px;
+    text-align: center;
+    margin: 0;
+}
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+#dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.Content { 
+    display: flex; /* Make sure it's not overlapping with other stuffs when moving the screen */
+    flex-direction: column; /* Change flex direction to column */
+}
+
+/* Make the header a bigger font size */
+#MySecondHeader {
+    font-size:27px;
+}
+
+.Tennis {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+/* Format the paragraph in Tennis */
+.Tennis p {
+    font-size: 23px; /* Set the font size */
+    /* display: flex; */
+    margin-top: 10px;
+    /* margin-left: -70px; */
+}
+
+/* The first picture in this class */
+.TennisPic2 {
+    border: 10px solid rgb(141, 134, 134);
+    background: rgb(68, 53, 53);
+    float:right;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    padding: 20px;
+    max-height: 300px;
+    max-width: 200px;
+}
+
+/* Start of navigation bar */
+.Hyperlink {
+    background-color: lightblue;
+    /* width: 600px; */
+    display: flex;
+    flex-direction: column;
+    border: 10px solid rgb(200, 202, 202); /* Add a 10px border */
+    margin-left: auto; /* Align to the right edge */
+    /* Adjusted height and padding */
+    height: 320px; /* Adjusted height */
+    padding: 20px; /* Adjusted padding */
+}
+
+.Hyperlink ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%; /* Adjust the height to match the container height */
+}
+
+.Hyperlink li {
+    text-align: center;
+}
+
+.Hyperlink a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.current-page a {
+    background-color: rgb(200, 202, 202);
+}
+
+.Hyperlink a:hover {
+    background-color: black;
+}
+/* End of navigation bar */
+
+.TennisTeam {
+    margin-left: 10px;
+    margin-bottom: 100px;
+}
+
+#TennisTeamHeader {
+    font-size: 23px;
+}
+
+.TennisTeam p {
+    max-width: 800px; /* Adjust the maximum width as desired */
+    font-size: 20px;
+}
+
+.TeamPic1 {
+    border: 10px solid black;
+    background: rgb(68, 53, 53);
+    float:inline-start;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 800px;
+    margin-top: -430px; */
+    padding: 20px;
+}
+
+/* This is for the footer */
+.Footer {
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 10px solid rgb(200, 202, 202);
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .Content {
+        margin-top: 10px;
+    }
+
+    .TennisTeam {
+        margin-bottom: 50px;
+    }
+
+    #myHeader { /* The header format is same for every page */
+        /* It has a light blue border to cover the text of header */
+        background-color: lightblue;
+        color: #000000;
+        padding: 40px;
+        text-align: center;
+        margin: 0;
+        border-bottom: 10px solid rgb(200, 202, 202);
+    }
+    .Hyperlink {
+        display: none;
+    }
+  }

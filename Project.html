@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- link to the css file -->
+        <link rel="stylesheet" type="text/css" href="Project.css">
+    </head>
+
+    <body>
+        <!-- Header that on the top (Same for all the pages) -->
+        <h1 id="myHeader">Projects</h1>
+
+        <!-- The class Contents contains all the contents -->
+        <div class = "Contents"> 
+            <!-- The class has the introduction of all of the projects -->
+            <div class="Projects">
+                <h2 id="ProjectsIntro">Projects Introduction</h2>
+                <p>
+                    &#160 &#160 &#160 In the past two years, I've done three innovative projects that showcase my 
+                    expertise in software development, compiler design, and game development. 
+                    The Random Lifestyle Generator offers users a customizable solution to inject 
+                    spontaneity into their daily routines through a user-friendly Java GUI interface. 
+                    The Compiler Individual Project demonstrates my ability to translate human-readable 
+                    language into machine code efficiently using ALGOL C language, incorporating 
+                    sophisticated symbol table functionality for informed decision-making. Finally, 
+                    the Objective-Oriented Programming Individual Project introduces the Battle Bots Game, 
+                    an immersive virtual arena where autonomous characters engage in intense combat, 
+                    highlighting my proficiency in artificial intelligence and user interface design.
+                </p>
+                <!-- This is the class for project 1 -->
+                <div class="Project1"> 
+                    <h3 id="Project1Header">Project 1 -- Lifestyle Generator</h3>
+                        <p>
+                            &#160 &#160 &#160 This is a versatile software development project implemented in Java 
+                            with a GUI interface, designed to add an element of spontaneity to users' daily routines. 
+                            With customizable wheels and the ability to effortlessly add, edit, and delete options, 
+                            users can tailor their experiences to suit their preferences. Whether seeking inspiration 
+                            for activities, meals, or decision-making, the Lifestyle Generator offers a seamless 
+                            solution, culminating in a randomized selection displayed instantaneously for enhanced 
+                            convenience.A versatile software development project implemented in Java with a GUI interface, 
+                            designed to add an element of spontaneity to users' daily routines. With customizable wheels 
+                            and the ability to effortlessly add, edit, and delete options, users can tailor their experiences 
+                            to suit their preferences. Whether seeking inspiration for activities, meals, or decision-making, 
+                            the Lifestyle Generator offers a seamless solution, culminating in a randomized selection displayed 
+                            instantaneously for enhanced convenience.
+                        </p>
+                        <!-- This is where people can download project 1 -->
+                        <a href="LifestyleGenerator.zip" download>Download Lifestyle Generator</a>
+                </div>
+        
+                <!-- This is the class for project 2 -->
+                <div class="Project2"> 
+                    <h3 id="Project2Header">Project 2 -- Compiler</h3>
+                        <p>
+                            &#160 &#160 &#160 This is a sophisticated system designed to translate human-readable language 
+                            into machine code using ALGOL C language, leveraging Lex and YACC generators. By parsing user 
+                            inputs and adhering to predefined rules within lex and YACC files, the compiler efficiently generates 
+                            machine code. Furthermore, the incorporation of a symbol table enables meticulous tracking of 
+                            existing expressions and variables, facilitating informed decisions regarding the availability of 
+                            adding, naming, and deleting functions
+                        </p>
+                        <!-- This is where people can download project 2 -->
+                        <a href="Compiler.zip" download>Download Compiler</a>
+                </div>
+        
+                <!-- This is the class for project 3 -->
+                <div class="Project3"> 
+                    <h3 id="Project3Header">Project 3 -- Battle Bots Game</h3>
+                        <p>
+                            &#160 &#160 &#160 This is an immersive virtual arena where small yet mighty characters engage in 
+                            intense combat autonomously. As the battle commences, these ball-like avatars navigate the arena, 
+                            collecting coins and launching attacks without direct player control. With a user-friendly interface 
+                            enabling players to select between one to five characters for each match, the game offers dynamic 
+                            and customizable gameplay experiences.
+                        </p>
+                        <!-- This is where people can download project 3 -->
+                        <a href="BattleBots.zip" download>Download Battle Bots Game</a>
+                </div>
+            </div>
+
+                <!-- This is the navigation bar -->
+                <div class="Hyperlink">
+                    <ul>
+                    <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                    <li><a href="http://127.0.0.1:5500/Hobby1.html">Hobby 1</a></li>
+                    <li><a href="http://127.0.0.1:5500/Hobby2.html">Hobby2</a></li>
+                    <li class="current-page"><a href="http://127.0.0.1:5500/Project.html">Project</a></li>
+                    <li><a href="http://127.0.0.1:5500/Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div><button id="dark-mode-toggle">Toggle Dark Mode</button>
+    
+            <script>
+                document.getElementById("dark-mode-toggle").onclick = function(){
+                    document.getElementsByTagName("body")[0].classList.toggle("dark");
+                };
+            </script>
+    
+        </div>
+        
+        <!-- This is the footer -->
+        <footer class="Footer">
+            Copyright &copy; 2024 Mingfang Zhu
+        </footer>
+    </body>
+</html>

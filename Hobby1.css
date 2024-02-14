@@ -1,0 +1,164 @@
+body { 
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Set the font for whole page */
+}
+
+#myHeader { /* Use same format of header for all pages */
+    background-color: lightblue; /* Make a light blue frame */
+    color: #000000;
+    padding: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+.content { /* The content class has all the contents for this page */
+    display: flex; /* So that it won't be overlapped with the picture */
+}
+
+.General { /* This class introduces the instrument hobby */
+    display: flex;
+    margin-left: 10px
+}
+
+.InsPic { /* This is for the first picture */
+    max-height: 300px;
+    border: 10px solid black;
+    background: rgb(68, 53, 53); /* Make a colorful frame for the picture */
+    float: left; /* Make the picture to float on the left side */
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.IntroText p {
+    font-size: 23px; /* Make the text in General class bigger than Guitar class */
+}
+
+.LinksToSongs1 a { /* For the links in General class */
+    display: block;
+    margin-bottom: 10px; /* Add some space between the links */
+    font-size: 23px;
+}
+
+/* Start of navigation bar */
+.Hyperlink {
+    background-color: lightblue;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    border: 10px solid rgb(200, 202, 202); /* Add a 10px border */
+    margin-left: auto; /* Align to the right edge */
+
+    /* Adjusted height and padding */
+    height: 320px; /* Adjusted height */
+    padding: 20px; /* Adjusted padding */
+}
+
+.Hyperlink ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%; /* Adjust the height to match the container height */
+}
+
+.Hyperlink li {
+    text-align: center;
+}
+
+.Hyperlink a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.current-page a {
+    background-color: rgb(200, 202, 202);
+}
+
+.Hyperlink a:hover {
+    background-color: black;
+}
+/* End of navigation bar */
+
+.Guitar {
+    margin-left: 10px;
+    margin-bottom: 100px;
+}
+
+/* This is for the second picture */
+.GuitarPic {
+    border: 10px solid black;
+    background: rgb(200, 202, 202);
+    float: right;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+#dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#myThridHeader { /* Make the header a bigger font size */
+    font-size: 23px;
+}
+
+.Guitar p {
+    font-size: 20px;
+}
+
+.LinksToSongs2 a { /* For the links in Guitar class */
+    display: block;
+    margin-bottom: 10px; /* Add some space between the links */
+    font-size: 20px;
+}
+
+/* This is for the footer */
+.Footer { /* Make it the same style of header */
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 10px solid rgb(200, 202, 202);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .General {
+        margin-top: 10px;
+    }
+
+    .Guitar {
+        margin-bottom: 50px;
+    }
+
+    #myHeader { /* The header format is same for every page */
+        /* It has a light blue border to cover the text of header */
+        background-color: lightblue;
+        color: #000000;
+        padding: 40px;
+        text-align: center;
+        margin: 0;
+        border-bottom: 10px solid rgb(200, 202, 202);
+    }
+    .Hyperlink {
+        display: none;
+    }
+  }

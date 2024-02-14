@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href="Contact.css">
+    </head>
+
+    <body>
+        <h1 id = "myHeader">Contact Me</h1>
+
+        <div class = "contents">
+            <div class = "contact-info">
+                <div class = "contact-item">
+                    <h2> US Phone: </h2>
+                    <p> 575-277-8759 </p>
+                </div>
+
+                <div class = "contact-item">
+                    <h2> International Phone: </h2>
+                    <p> +86 135-2108-6648 </p>
+                </div>
+
+                <div class = "contact-item">
+                    <h2> NMSU Email: </h2>
+                    <p> lisazhu@nmsu.edu </p>
+                </div>
+
+                <div class = "contact-item">
+                    <h2> Gmail: </h2>
+                    <p> zhumingfang3@gmail.com </p>
+                </div>
+            </div>
+    
+            <div class="Hyperlink">
+                <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/Hobby1.html">Hobby 1</a></li>
+                <li><a href="http://127.0.0.1:5500/Hobby2.html">Hobby2</a></li>
+                <li><a href="http://127.0.0.1:5500/Project.html">Project</a></li>
+                <li class="current-page"><a href="http://127.0.0.1:5500/Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div><button id="dark-mode-toggle">Toggle Dark Mode</button>
+
+        <script>
+            document.getElementById("dark-mode-toggle").onclick = function(){
+                document.getElementsByTagName("body")[0].classList.toggle("dark");
+            };
+        </script>
+        </div>
+
+        <footer class="Footer">
+            Copyright &copy; 2024 Mingfang Zhu
+        </footer>
+    </body>
+</html>

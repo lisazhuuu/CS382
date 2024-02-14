@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- link to the css file -->
+    <link rel="stylesheet" type="text/css" href="Hobby1.css">
+</head>
+
+<body>
+    <!-- Header that on the top (Same for all the pages) -->
+    <h1 id="myHeader">Hobby 1 -- Music</h1>
+      <!-- The class content contains all the contents -->
+      <div class="content">
+        <!-- The class General contains only the hobby of instrument (texts and an image) -->
+        <div class="General"> 
+            <!-- This IntroText has the header and text of General class -->
+            <div class="IntroText">
+                <!-- This is the image with all the instruments -->
+                <div class="InsPic">
+                    <img src="Myimage.jpg" alt="Instruments" width="200" height="280"/>
+                </div>
+                <h2 id="MySecondHeader"> Playing Instruments</h2>
+                <p>
+                    &#160 &#160 &#160 I enjoy a range of hobbies, but playing musical instruments is my favorite. 
+                    I can play guitar, piano, ukulele, and kalimba. Whenever I have some free 
+                    time, I like to cover songs and even write my own. Mixing different instruments 
+                    together to create a nice accompaniment is something I really enjoy. It helps 
+                    me unwind and release stress after a long day at work. 
+                </p>
+
+                <p>
+                    &#160 &#160 &#160 Here are some songs that I covered. The first one, Song of the Lonely Mountain, is the 
+                    theme song of movie The Hobbit, which is one of my favorite series of movie. I used guitar,
+                    piano, drump, and kalimba to make this song about 4 to 5 years ago. 
+                </p>
+
+                <p>
+                    &#160 &#160 &#160 The second song is a Chinese song called Hua Hai, 
+                    which means the Flower Sea in English. The singer is Jay Chou, who is one of the most popular
+                    singer in China. I covered this song recently, with piano and guitar mainly, plus a little bit of chorus. 
+                </p>
+
+                <div class="LinksToSongs1">
+                    <a href="https://youtu.be/ENce_1FCyEA?si=K1_FLOetFiOjWfah">Song of the Lonely Mountain</a>
+                    <a href="https://youtu.be/fAI0bL7C-gg?si=QbMWp_ejB9JBbs86">Hua Hai (Flower Sea) </a>
+                </div>
+            </div>
+
+            <!-- This is the navigation bar -->
+            <div class="Hyperlink">
+                <ul>
+                  <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                  <li class="current-page"><a href="http://127.0.0.1:5500/Hobby1.html">Hobby 1</a></li>
+                  <li><a href="http://127.0.0.1:5500/Hobby2.html">Hobby 2</a></li>
+                  <li><a href="http://127.0.0.1:5500/Project.html">Project</a></li>
+                  <li><a href="http://127.0.0.1:5500/Contact.html">Contact</a></li>
+                </ul>
+              </div>
+        </div>
+
+    </div>
+
+    <!-- This is another class, called Guitar. It contains a image and a texts section -->
+    <div class="Guitar">
+        <!-- This is the guitar picture -->
+        <div class="GuitarPic">
+            <img src="Guitar.jpg" alt="Instruments" width="200" height="280"/>
+        </div>
+
+        <!-- This is the text section of Guitar class -->
+        <h3 id="myThridHeader"> Guitar </h3>
+        <p>
+            &#160 &#160 &#160 Out of all these instruments, the guitar holds a special place in my heart. 
+            With the guitar, I have the freedom to sing along while playing, focus solely on the melody, 
+            or experiment with crafting songs using various chords. I embarked on my guitar journey 
+            independently around four years ago. Throughout these years, I've devoted countless hours 
+            to playing, almost every day, without ever feeling weary. Whenever I feel stressed or anxious 
+            due to school, the guitar serves as a reliable source of solace, effectively calming my mind.
+        </p>
+
+        <p>
+            &#160 &#160 &#160 These two links provided below are the songs that I covered by pure guitar. 
+            The first one is called Joker and the Queen. It is a really slow and relaxing song with simple 
+            guitar accompaniment。
+        </p>
+
+        <p>
+            &#160 &#160 &#160 The second song was covered by me and my cousin, she was playing piano and I was
+            playing guitar. The singer is Jay Chou, and the song's name is Shan Hu Hai, meaning th Chorals Sea. 
+            It is a very beautiful song. 
+        </p>
+
+        <div class="LinksToSongs2">
+            <a href="https://youtu.be/pc_fbIlOpfY?si=2LrtCOJ1PrXpGESh">The Joker and the Queen</a>
+            <a href="https://youtu.be/qq7fRwLDhGw?si=iQnFR2zVyjCJqxCz">Shan Hu Hai (Corals Sea)</a>
+        </div>
+    </div>
+
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+
+    <script>
+        document.getElementById("dark-mode-toggle").onclick = function(){
+            document.getElementsByTagName("body")[0].classList.toggle("dark");
+        };
+    </script>
+
+    <!-- This is the footer -->
+    <footer class="Footer">
+        Copyright &copy; 2024 Mingfang Zhu
+    </footer>
+</body>
+</html>
