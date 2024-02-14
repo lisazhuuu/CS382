@@ -1,1 +1,56 @@
-<h1> Hello World </h1>
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- link to the css file -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <!-- Header that on the top (Same for all the pages) -->
+    <h1 id="myHeader">Mingfang Zhu's Personal Website</h1>
+
+    <!-- The class Bio contains all the contents -->
+    <div class="Bio">
+
+        <!-- This BioText class contains all the texts on this page -->
+        <div class="BioText">
+            <!-- This is my profile picture -->
+            <div class="frame">
+                <img src="Profile.jpg" alt="Mingfang Zhu" width="200" height="280"/>
+            </div>
+            <h2 id="MySecondHeader">Short Bio</h2>
+            <p>&#160 &#160 &#160 Hi! I am Mingfang Zhu, but most people call me Lisa. Currently, I'm in my junior year,
+                diving into the world of Computer Science while also delving into Finance on the side. I am also part
+                of the NMSU Women's Tennis Team. I originally hail from Beijing, China, and made my way to Las Cruces
+                in 2021 to pursue my education. There's something about the calm and cozy vibe of this small city that
+                I find really appealing. It's been a refreshing change, and I'm enjoying the laid-back atmosphere while
+                balancing academics and tennis.
+            </p>
+        </div>
+
+        <!-- This is the navigation bar -->
+        <div class="Hyperlink">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/Hobby1.html">Hobby 1</a></li>
+                <li><a href="http://127.0.0.1:5500/Hobby2.html">Hobby 2</a></li>
+                <li><a href="http://127.0.0.1:5500/Project.html">Project</a></li>
+                <li><a href="http://127.0.0.1:5500/Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+
+        <script>
+            document.getElementById("dark-mode-toggle").onclick = function(){
+                document.getElementsByTagName("body")[0].classList.toggle("dark");
+            };
+        </script>
+    </div>
+
+    <!-- This is the footer (Same for all the pages) -->
+    <footer class="Footer">
+        Copyright &copy; 2024 Mingfang Zhu
+    </footer>
+
+</body>
+</html>
