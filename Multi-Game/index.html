@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title> Connect 4 </title>
+
+    <!-- Link to css and js -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1> Connect 4 </h1>
+
+    <div class = "Info"> 
+        <h2> Welcome to Mingfang Zhu's Connect 4 game! In this two-player game, the 
+            goal is to create a line of four discs in a row, either horizontally, 
+            vertically, or diagonally, before your opponent does. Let's explore the 
+            rules together!  </h2>
+        <ul>
+            <li> Players can choose their pieces' color ONCE by dragging it to the gray 
+                 area, filling both areas if color is chosen. </li>
+            <li> Once the game start, players can't choose their pieces anymore. </li>
+            <li> If the game is decided, an animation showing who wins will show up on top of the screen, 
+                 and players can click NEW GAME button to start over. </li>
+            <li> If the game is undecided when all the tiles are full, click NEW GAME to start over. </li>
+            <li> Who's turn for the next play will be showed on the bottom right of the screen. </li>
+        </ul>
+    </div>
+
+    <h2 id = "winner"> </h2>
+    <div id = "board"> </div>
+
+    <div class = "Players"> 
+        <div class = "Player1"> 
+            <h3 id = "player1"> Player 1 </h3>
+            <div id="blueBall" draggable="true" ondragstart="drag(event)"> </div>
+        </div>
+
+        <div class = "Player2"> 
+            <h3 id = "player2"> Player 2 </h3>
+            <div id="yellowBall" draggable="true" ondragstart="drag(event)"> </div>
+        </div>
+    </div>
+
+    <div class = "Dropzone">
+        <div id = "dropZone1"> </div>
+        <div id = "dropZone2"> </div>
+    </div>
+
+    <div id="player-turn">Blue's turn!</div>
+
+</body>
+</html>
+

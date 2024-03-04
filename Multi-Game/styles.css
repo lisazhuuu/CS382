@@ -1,0 +1,163 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#board {
+    height: 540px;
+    width: 630px;
+
+    background-color: lightblue;
+    border: 10px solid rgb(168, 185, 190);
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid rgb(168, 185, 190);
+}
+
+.blue-piece {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: rgb(56, 56, 231);
+}
+
+#blueBall {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: rgb(56, 56, 231);
+}
+
+.yellow-piece {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+#yellowBall {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.Players {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.Player1 {
+    margin-right: 50px;
+}
+
+button {
+    height: 70px;
+    width: 130px;
+
+    position: fixed;
+    top: 10px;
+    right: 20px;
+
+    background-color: lightblue;
+    border: 5px solid rgb(168, 185, 190);
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: rgb(56, 56, 231);
+    color: #ffffff;
+}
+
+.Dropzone {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+#dropZone1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(168, 185, 190);
+    margin-right: 50px;
+}
+
+#dropZone2 {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: rgb(168, 185, 190);
+}
+
+/* Define the animation */
+@keyframes winnerAnimation {
+    0% { font-size: 30px; }
+    50% { font-size: 40px; }
+    100% { font-size: 30px; }
+}
+
+/* Apply the animation to the winner element */
+.winner-animation {
+    animation: winnerAnimation 1s 5 alternate;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 50px;
+}
+
+#player-turn {
+    height: 70px; /* Increase the height */
+    width: 130px; /* Increase the width */
+    text-align: center; /* Center the text horizontally */
+    line-height: 40px; /* Center the text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+
+    background-color: rgb(56, 56, 231);
+    color: white;
+    border: 5px solid rgb(168, 185, 190);
+
+    font-size: 20px;
+}
+
+.Info {
+    text-align: left;
+    margin-top: 50px;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+ul {
+    list-style-type: disc; /* Use a filled circle as the bullet point */
+    /* Additional styling for the list */
+    margin-left: 20px; /* Indent the list from the left */
+  }
+
+li {
+    text-align: left;
+    font-size: 20px;
+}
